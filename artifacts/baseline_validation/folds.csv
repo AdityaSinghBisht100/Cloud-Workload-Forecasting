@@ -1,0 +1,8 @@
+fold,origin,train_start_seconds,train_end_seconds,validation_start_seconds,validation_end_seconds,validation_steps
+1,48,0,14100,14400,21300,24
+2,54,0,15900,16200,23100,24
+3,60,0,17700,18000,24900,24
+4,66,0,19500,19800,26700,24
+5,72,0,21300,21600,28500,24
+6,78,0,23100,23400,30300,24
+7,84,0,24900,25200,32100,24

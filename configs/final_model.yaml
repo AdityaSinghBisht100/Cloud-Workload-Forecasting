@@ -1,0 +1,49 @@
+model: global_vm_lightgbm
+features:
+- lag_1
+- lag_2
+- lag_3
+- lag_4
+- lag_5
+- lag_6
+- lag_7
+- lag_8
+- lag_9
+- lag_10
+- lag_11
+- lag_12
+- mean_3
+- std_3
+- mean_6
+- std_6
+- mean_12
+- std_12
+- slope_6
+- slope_12
+- vm_history_mean
+- aggregate_cpu_context
+- vm_category
+- virtual_core_bucket
+- memory_gb_bucket
+parameters:
+  objective: regression
+  n_estimators: 120
+  learning_rate: 0.05
+  num_leaves: 31
+  min_child_samples: 100
+  random_state: 42
+  n_jobs: 2
+  deterministic: true
+  force_col_wise: true
+  verbosity: -1
+split:
+  n_train: 110
+  horizon: 24
+  min_train: 48
+validation:
+  horizon: 24
+  min_train: 48
+  step: 6
+forecast_method: recursive_bottom_up
+count_model: observed_count_persistence
+holdout_previously_inspected: true

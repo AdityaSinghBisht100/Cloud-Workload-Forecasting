@@ -1,0 +1,259 @@
+{
+  "settings": {
+    "horizon": 24,
+    "min_train": 48,
+    "step": 6
+  },
+  "training_rows": 110,
+  "holdout_rows_reserved": 24,
+  "holdout_first_timestamp": 33000,
+  "forecast_rows": 2352,
+  "distinct_validation_timestamps": 60,
+  "folds": [
+    {
+      "fold": 1,
+      "origin": 48,
+      "train_start_seconds": 0,
+      "train_end_seconds": 14100,
+      "validation_start_seconds": 14400,
+      "validation_end_seconds": 21300,
+      "validation_steps": 24
+    },
+    {
+      "fold": 2,
+      "origin": 54,
+      "train_start_seconds": 0,
+      "train_end_seconds": 15900,
+      "validation_start_seconds": 16200,
+      "validation_end_seconds": 23100,
+      "validation_steps": 24
+    },
+    {
+      "fold": 3,
+      "origin": 60,
+      "train_start_seconds": 0,
+      "train_end_seconds": 17700,
+      "validation_start_seconds": 18000,
+      "validation_end_seconds": 24900,
+      "validation_steps": 24
+    },
+    {
+      "fold": 4,
+      "origin": 66,
+      "train_start_seconds": 0,
+      "train_end_seconds": 19500,
+      "validation_start_seconds": 19800,
+      "validation_end_seconds": 26700,
+      "validation_steps": 24
+    },
+    {
+      "fold": 5,
+      "origin": 72,
+      "train_start_seconds": 0,
+      "train_end_seconds": 21300,
+      "validation_start_seconds": 21600,
+      "validation_end_seconds": 28500,
+      "validation_steps": 24
+    },
+    {
+      "fold": 6,
+      "origin": 78,
+      "train_start_seconds": 0,
+      "train_end_seconds": 23100,
+      "validation_start_seconds": 23400,
+      "validation_end_seconds": 30300,
+      "validation_steps": 24
+    },
+    {
+      "fold": 7,
+      "origin": 84,
+      "train_start_seconds": 0,
+      "train_end_seconds": 24900,
+      "validation_start_seconds": 25200,
+      "validation_end_seconds": 32100,
+      "validation_steps": 24
+    }
+  ],
+  "scores": [
+    {
+      "target": "active_vm_count",
+      "model": "drift",
+      "forecast_cases": 168,
+      "folds": 7,
+      "mae": 0.0,
+      "rmse": 0.0,
+      "smape_pct": 0.0,
+      "persistence_mae": 0.0,
+      "skill_vs_persistence": null
+    },
+    {
+      "target": "active_vm_count",
+      "model": "moving_average_12",
+      "forecast_cases": 168,
+      "folds": 7,
+      "mae": 0.0,
+      "rmse": 0.0,
+      "smape_pct": 0.0,
+      "persistence_mae": 0.0,
+      "skill_vs_persistence": null
+    },
+    {
+      "target": "active_vm_count",
+      "model": "moving_average_24",
+      "forecast_cases": 168,
+      "folds": 7,
+      "mae": 0.0,
+      "rmse": 0.0,
+      "smape_pct": 0.0,
+      "persistence_mae": 0.0,
+      "skill_vs_persistence": null
+    },
+    {
+      "target": "active_vm_count",
+      "model": "moving_average_3",
+      "forecast_cases": 168,
+      "folds": 7,
+      "mae": 0.0,
+      "rmse": 0.0,
+      "smape_pct": 0.0,
+      "persistence_mae": 0.0,
+      "skill_vs_persistence": null
+    },
+    {
+      "target": "active_vm_count",
+      "model": "moving_average_6",
+      "forecast_cases": 168,
+      "folds": 7,
+      "mae": 0.0,
+      "rmse": 0.0,
+      "smape_pct": 0.0,
+      "persistence_mae": 0.0,
+      "skill_vs_persistence": null
+    },
+    {
+      "target": "active_vm_count",
+      "model": "persistence",
+      "forecast_cases": 168,
+      "folds": 7,
+      "mae": 0.0,
+      "rmse": 0.0,
+      "smape_pct": 0.0,
+      "persistence_mae": 0.0,
+      "skill_vs_persistence": null
+    },
+    {
+      "target": "active_vm_count",
+      "model": "seasonal_naive_24",
+      "forecast_cases": 168,
+      "folds": 7,
+      "mae": 0.0,
+      "rmse": 0.0,
+      "smape_pct": 0.0,
+      "persistence_mae": 0.0,
+      "skill_vs_persistence": null
+    },
+    {
+      "target": "aggregate_cpu_utilization",
+      "model": "moving_average_3",
+      "forecast_cases": 168,
+      "folds": 7,
+      "mae": 0.243850259751991,
+      "rmse": 0.295324006830049,
+      "smape_pct": 2.560666745388277,
+      "persistence_mae": 0.265501803206822,
+      "skill_vs_persistence": 0.081549515646661
+    },
+    {
+      "target": "aggregate_cpu_utilization",
+      "model": "moving_average_6",
+      "forecast_cases": 168,
+      "folds": 7,
+      "mae": 0.253211813794465,
+      "rmse": 0.30506594866887,
+      "smape_pct": 2.660021401601182,
+      "persistence_mae": 0.265501803206822,
+      "skill_vs_persistence": 0.046289664566924
+    },
+    {
+      "target": "aggregate_cpu_utilization",
+      "model": "persistence",
+      "forecast_cases": 168,
+      "folds": 7,
+      "mae": 0.265501803206822,
+      "rmse": 0.317361962114484,
+      "smape_pct": 2.783430293233836,
+      "persistence_mae": 0.265501803206822,
+      "skill_vs_persistence": 0.0
+    },
+    {
+      "target": "aggregate_cpu_utilization",
+      "model": "moving_average_12",
+      "forecast_cases": 168,
+      "folds": 7,
+      "mae": 0.268794762630054,
+      "rmse": 0.312072914639728,
+      "smape_pct": 2.826471367300939,
+      "persistence_mae": 0.265501803206822,
+      "skill_vs_persistence": -0.012402776114731
+    },
+    {
+      "target": "aggregate_cpu_utilization",
+      "model": "moving_average_24",
+      "forecast_cases": 168,
+      "folds": 7,
+      "mae": 0.278856089572993,
+      "rmse": 0.310813007496541,
+      "smape_pct": 2.937749224850451,
+      "persistence_mae": 0.265501803206822,
+      "skill_vs_persistence": -0.050298288768185
+    },
+    {
+      "target": "aggregate_cpu_utilization",
+      "model": "drift",
+      "forecast_cases": 168,
+      "folds": 7,
+      "mae": 0.304691247706553,
+      "rmse": 0.369506222754554,
+      "smape_pct": 3.181765860382312,
+      "persistence_mae": 0.265501803206822,
+      "skill_vs_persistence": -0.147605191476619
+    },
+    {
+      "target": "aggregate_cpu_utilization",
+      "model": "seasonal_naive_24",
+      "forecast_cases": 168,
+      "folds": 7,
+      "mae": 0.321038609620405,
+      "rmse": 0.361108082652479,
+      "smape_pct": 3.369190486155294,
+      "persistence_mae": 0.265501803206822,
+      "skill_vs_persistence": -0.209176757908198
+    }
+  ],
+  "selected_moving_average": [
+    {
+      "target": "active_vm_count",
+      "model": "moving_average_3",
+      "forecast_cases": 168,
+      "folds": 7,
+      "mae": 0.0,
+      "rmse": 0.0,
+      "smape_pct": 0.0,
+      "persistence_mae": 0.0,
+      "skill_vs_persistence": null,
+      "window": 3
+    },
+    {
+      "target": "aggregate_cpu_utilization",
+      "model": "moving_average_3",
+      "forecast_cases": 168,
+      "folds": 7,
+      "mae": 0.243850259751991,
+      "rmse": 0.295324006830049,
+      "smape_pct": 2.560666745388277,
+      "persistence_mae": 0.265501803206822,
+      "skill_vs_persistence": 0.081549515646661,
+      "window": 3
+    }
+  ]
+}

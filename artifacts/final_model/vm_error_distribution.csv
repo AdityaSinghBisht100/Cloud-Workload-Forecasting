@@ -1,0 +1,2 @@
+model,vm_origin_cases,macro_mae,median_vm_mae,p90_vm_mae,p99_vm_mae
+global_vm_lightgbm,70000,2.133216766207533,0.7698859911940705,4.493806321109505,26.165843011353367

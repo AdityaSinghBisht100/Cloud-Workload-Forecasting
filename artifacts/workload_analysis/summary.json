@@ -1,0 +1,419 @@
+{
+  "metrics": {
+    "training_samples": 110,
+    "vm_count": 10000,
+    "high_threshold": 9.55449433992235,
+    "low_threshold": 9.257375543249143,
+    "mean_cpu": 9.414089019539007,
+    "aggregate_std_pp": 0.1935683354736282,
+    "aggregate_cv": 0.020561557796179297,
+    "median_vm_cv": 0.2852583554974224,
+    "acf_excluded_vms": 0,
+    "idle_and_hot_vms": 151,
+    "top_1pct_vm_count": 100,
+    "top_1pct_cpu_share_pct": 9.596431128357786,
+    "primary_peak_window_id": 3
+  },
+  "indicators": [
+    {
+      "indicator": "Idle",
+      "rule": "Historical CPU average avg_cpu < 5%",
+      "vm_count": 4635,
+      "share_pct": 46.35
+    },
+    {
+      "indicator": "Steady",
+      "rule": "Historical CPU average >= 5% and std/mean <= 0.5",
+      "vm_count": 4495,
+      "share_pct": 44.95
+    },
+    {
+      "indicator": "Hot",
+      "rule": "At least one training max_cpu > 80%",
+      "vm_count": 2235,
+      "share_pct": 22.35
+    }
+  ],
+  "categories": [
+    {
+      "vm_category": "Interactive",
+      "mean_cpu": 11.505149960490014,
+      "volatility_pp": 0.243348870246352,
+      "timestamps_observed": 110,
+      "vm_count": 3091,
+      "high_load_cpu_share_pct": 37.45783356821694
+    },
+    {
+      "vm_category": "Unknown",
+      "mean_cpu": 10.354689253471212,
+      "volatility_pp": 0.6290173901517675,
+      "timestamps_observed": 110,
+      "vm_count": 729,
+      "high_load_cpu_share_pct": 7.744166435782576
+    },
+    {
+      "vm_category": "Delay-insensitive",
+      "mean_cpu": 8.257265890248375,
+      "volatility_pp": 0.21698144067091657,
+      "timestamps_observed": 110,
+      "vm_count": 6180,
+      "high_load_cpu_share_pct": 54.79799999600047
+    }
+  ],
+  "concentration": [
+    {
+      "group": "subscription_id",
+      "distinct_groups": 2324,
+      "largest_group_vms": 96,
+      "largest_group_share_pct": 0.96,
+      "top_10_group_share_pct": 8.84,
+      "hhi": 0.0028166600000000003,
+      "effective_group_count": 355.03042610751737
+    },
+    {
+      "group": "deployment_id",
+      "distinct_groups": 2359,
+      "largest_group_vms": 96,
+      "largest_group_share_pct": 0.96,
+      "top_10_group_share_pct": 8.84,
+      "hhi": 0.0028091400000000008,
+      "effective_group_count": 355.9808339918978
+    }
+  ],
+  "change_candidates": [
+    {
+      "boundary_index": 8,
+      "timestamp": 2400,
+      "change_pp": 0.17058819382041257,
+      "absolute_change_pp": 0.17058819382041257
+    },
+    {
+      "boundary_index": 15,
+      "timestamp": 4500,
+      "change_pp": -0.14657889753143216,
+      "absolute_change_pp": 0.14657889753143216
+    },
+    {
+      "boundary_index": 33,
+      "timestamp": 9900,
+      "change_pp": 0.13833778661896545,
+      "absolute_change_pp": 0.13833778661896545
+    },
+    {
+      "boundary_index": 53,
+      "timestamp": 15900,
+      "change_pp": 0.42632127426116107,
+      "absolute_change_pp": 0.42632127426116107
+    },
+    {
+      "boundary_index": 71,
+      "timestamp": 21300,
+      "change_pp": -0.32431154106160776,
+      "absolute_change_pp": 0.32431154106160776
+    },
+    {
+      "boundary_index": 86,
+      "timestamp": 25800,
+      "change_pp": -0.1391841274024319,
+      "absolute_change_pp": 0.1391841274024319
+    }
+  ],
+  "peaks": [
+    {
+      "window_id": 1,
+      "start_index": 5,
+      "end_index": 5,
+      "start_seconds": 1500,
+      "end_seconds": 1500,
+      "samples": 1,
+      "mean_cpu": 9.580334798264252,
+      "max_cpu": 9.580334798264252,
+      "min_cpu": 9.580334798264252,
+      "baseline_samples": 5,
+      "baseline_cpu": 9.314595628922351,
+      "increase_pp": 0.26573916934190045,
+      "top_vm": "liNAO/NtVtqtAe9T59HzchQRvpKd4dYwjNR/9bSL8560U//gBXrriywaxe+CPXtb",
+      "top_category": "Delay-insensitive",
+      "top_20_vm_share_of_increase_pct": 40.129185969325334
+    },
+    {
+      "window_id": 2,
+      "start_index": 9,
+      "end_index": 9,
+      "start_seconds": 2700,
+      "end_seconds": 2700,
+      "samples": 1,
+      "mean_cpu": 9.647704352744572,
+      "max_cpu": 9.647704352744572,
+      "min_cpu": 9.647704352744572,
+      "baseline_samples": 6,
+      "baseline_cpu": 9.350585081940098,
+      "increase_pp": 0.2971192708044743,
+      "top_vm": "Qwlz2Bc4AVSzMfOE3boRxGiWzDrozFI002nDIOqduv9EBwoEuVjxtiUKNU1v5uUU",
+      "top_category": "Interactive",
+      "top_20_vm_share_of_increase_pct": 43.41218150625454
+    },
+    {
+      "window_id": 3,
+      "start_index": 53,
+      "end_index": 63,
+      "start_seconds": 15900,
+      "end_seconds": 18900,
+      "samples": 11,
+      "mean_cpu": 9.784673128332686,
+      "max_cpu": 9.912175173984913,
+      "min_cpu": 9.612251333445297,
+      "baseline_samples": 6,
+      "baseline_cpu": 9.364452249335681,
+      "increase_pp": 0.42022087899700544,
+      "top_vm": "xLbiuzphbqoXdNr6alqeOWgbQIBpVcXx3qsG+PG93sIGEXAZ/dPuIQgwuNqYtdgw",
+      "top_category": "Delay-insensitive",
+      "top_20_vm_share_of_increase_pct": 22.033534814887737
+    },
+    {
+      "window_id": 4,
+      "start_index": 65,
+      "end_index": 72,
+      "start_seconds": 19500,
+      "end_seconds": 21600,
+      "samples": 8,
+      "mean_cpu": 9.683312804930619,
+      "max_cpu": 9.891945531128975,
+      "min_cpu": 9.560395530810162,
+      "baseline_samples": 6,
+      "baseline_cpu": 9.739963718713154,
+      "increase_pp": -0.056650913782535284,
+      "top_vm": "OGT2cFkkc3pOAggio805cBtNTEvCVCCieeFtviXfXwln2pVbawcCEcZ8rImTxouB",
+      "top_category": "Interactive",
+      "top_20_vm_share_of_increase_pct": null
+    },
+    {
+      "window_id": 5,
+      "start_index": 77,
+      "end_index": 77,
+      "start_seconds": 23100,
+      "end_seconds": 23100,
+      "samples": 1,
+      "mean_cpu": 9.562667787375416,
+      "max_cpu": 9.562667787375416,
+      "min_cpu": 9.562667787375416,
+      "baseline_samples": 6,
+      "baseline_cpu": 9.391828387206822,
+      "increase_pp": 0.17083940016859422,
+      "top_vm": "p8nyt20mggZdbuDJrDrRDlmKWHfXrOdkaUMfKWCcmXOwJtl2Ou+zV6R+PjerTxAL",
+      "top_category": "Interactive",
+      "top_20_vm_share_of_increase_pct": 70.74128112216502
+    }
+  ],
+  "lows": [
+    {
+      "window_id": 1,
+      "start_index": 3,
+      "end_index": 4,
+      "start_seconds": 900,
+      "end_seconds": 1200,
+      "samples": 2,
+      "mean_cpu": 9.183961267746938,
+      "max_cpu": 9.224419163970603,
+      "min_cpu": 9.143503371523273
+    },
+    {
+      "window_id": 2,
+      "start_index": 16,
+      "end_index": 16,
+      "start_seconds": 4800,
+      "end_seconds": 4800,
+      "samples": 1,
+      "mean_cpu": 9.147052722981723,
+      "max_cpu": 9.147052722981723,
+      "min_cpu": 9.147052722981723
+    },
+    {
+      "window_id": 3,
+      "start_index": 28,
+      "end_index": 28,
+      "start_seconds": 8400,
+      "end_seconds": 8400,
+      "samples": 1,
+      "mean_cpu": 9.118487887376814,
+      "max_cpu": 9.118487887376814,
+      "min_cpu": 9.118487887376814
+    },
+    {
+      "window_id": 4,
+      "start_index": 30,
+      "end_index": 31,
+      "start_seconds": 9000,
+      "end_seconds": 9300,
+      "samples": 2,
+      "mean_cpu": 9.235352308308821,
+      "max_cpu": 9.240900444442707,
+      "min_cpu": 9.229804172174935
+    },
+    {
+      "window_id": 5,
+      "start_index": 43,
+      "end_index": 43,
+      "start_seconds": 12900,
+      "end_seconds": 12900,
+      "samples": 1,
+      "mean_cpu": 9.207312350523695,
+      "max_cpu": 9.207312350523695,
+      "min_cpu": 9.207312350523695
+    },
+    {
+      "window_id": 6,
+      "start_index": 52,
+      "end_index": 52,
+      "start_seconds": 15600,
+      "end_seconds": 15600,
+      "samples": 1,
+      "mean_cpu": 9.25337069278617,
+      "max_cpu": 9.25337069278617,
+      "min_cpu": 9.25337069278617
+    },
+    {
+      "window_id": 7,
+      "start_index": 75,
+      "end_index": 76,
+      "start_seconds": 22500,
+      "end_seconds": 22800,
+      "samples": 2,
+      "mean_cpu": 9.193010266773777,
+      "max_cpu": 9.23326660766697,
+      "min_cpu": 9.152753925880585
+    },
+    {
+      "window_id": 8,
+      "start_index": 88,
+      "end_index": 88,
+      "start_seconds": 26400,
+      "end_seconds": 26400,
+      "samples": 1,
+      "mean_cpu": 9.123236432079912,
+      "max_cpu": 9.123236432079912,
+      "min_cpu": 9.123236432079912
+    },
+    {
+      "window_id": 9,
+      "start_index": 90,
+      "end_index": 91,
+      "start_seconds": 27000,
+      "end_seconds": 27300,
+      "samples": 2,
+      "mean_cpu": 9.159604187835264,
+      "max_cpu": 9.203807852202154,
+      "min_cpu": 9.115400523468372
+    },
+    {
+      "window_id": 10,
+      "start_index": 99,
+      "end_index": 100,
+      "start_seconds": 29700,
+      "end_seconds": 30000,
+      "samples": 2,
+      "mean_cpu": 9.170674204716263,
+      "max_cpu": 9.18082461490044,
+      "min_cpu": 9.160523794532086
+    },
+    {
+      "window_id": 11,
+      "start_index": 102,
+      "end_index": 104,
+      "start_seconds": 30600,
+      "end_seconds": 31200,
+      "samples": 3,
+      "mean_cpu": 9.200795930875207,
+      "max_cpu": 9.25015163856595,
+      "min_cpu": 9.114319798015877
+    },
+    {
+      "window_id": 12,
+      "start_index": 106,
+      "end_index": 109,
+      "start_seconds": 31800,
+      "end_seconds": 32700,
+      "samples": 4,
+      "mean_cpu": 9.153573263343004,
+      "max_cpu": 9.218537958153805,
+      "min_cpu": 9.111633601754889
+    }
+  ],
+  "lag1": {
+    "lag": 1.0,
+    "minutes": 5.0,
+    "aggregate_acf": 0.6620683329704637,
+    "aggregate_pacf": 0.6620683329704636,
+    "median_vm_acf": 0.06124405628682843,
+    "eligible_vms": 10000.0
+  },
+  "primary_category_drivers": [
+    {
+      "vm_category": "Delay-insensitive",
+      "contribution_pp": 0.3035408239591087,
+      "window_id": 3
+    },
+    {
+      "vm_category": "Interactive",
+      "contribution_pp": 0.11665060382651929,
+      "window_id": 3
+    },
+    {
+      "vm_category": "Unknown",
+      "contribution_pp": 2.945121138054523e-05,
+      "window_id": 3
+    }
+  ],
+  "top_segments": [
+    {
+      "vm_category": "Delay-insensitive",
+      "virtual_core_bucket": "2",
+      "memory_gb_bucket": "2",
+      "mean_cpu": 9.303126692337056,
+      "volatility_pp": 0.2837010874710008,
+      "timestamps_observed": 110,
+      "vm_count": 2708,
+      "high_load_cpu_share_pct": 27.17793025532708
+    },
+    {
+      "vm_category": "Delay-insensitive",
+      "virtual_core_bucket": "2",
+      "memory_gb_bucket": "4",
+      "mean_cpu": 8.761793053906636,
+      "volatility_pp": 0.35213915897929066,
+      "timestamps_observed": 110,
+      "vm_count": 1602,
+      "high_load_cpu_share_pct": 15.182245966659188
+    },
+    {
+      "vm_category": "Interactive",
+      "virtual_core_bucket": "2",
+      "memory_gb_bucket": "4",
+      "mean_cpu": 16.639206507758953,
+      "volatility_pp": 0.670313433107323,
+      "timestamps_observed": 110,
+      "vm_count": 697,
+      "high_load_cpu_share_pct": 12.350486612329895
+    },
+    {
+      "vm_category": "Interactive",
+      "virtual_core_bucket": "2",
+      "memory_gb_bucket": "2",
+      "mean_cpu": 7.39930054939016,
+      "volatility_pp": 0.1340655739374698,
+      "timestamps_observed": 110,
+      "vm_count": 1087,
+      "high_load_cpu_share_pct": 8.373846728024844
+    },
+    {
+      "vm_category": "Interactive",
+      "virtual_core_bucket": "2",
+      "memory_gb_bucket": "8",
+      "mean_cpu": 14.565633131832799,
+      "volatility_pp": 1.2719304508543892,
+      "timestamps_observed": 110,
+      "vm_count": 426,
+      "high_load_cpu_share_pct": 6.825935127849671
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+schema_version: 1
+segments:
+  Interactive:
+    under_cost: 9.0
+    over_cost: 1.0
+    margin: 0.1
+  Delay-insensitive:
+    under_cost: 3.0
+    over_cost: 1.0
+    margin: 0.05
+  Unknown:
+    under_cost: 5.0
+    over_cost: 1.0
+    margin: 0.1
+cost_curve_levels:
+- 0.5
+- 0.75
+- 0.9
+fixed_headroom_pp:
+- 0.0
+- 0.25
+- 0.5
+peak_trigger:
+  slope_pp_per_step: 0.05
+  extra_headroom_pp: 0.25

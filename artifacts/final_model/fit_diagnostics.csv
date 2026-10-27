@@ -1,0 +1,8 @@
+fold,origin,raw_training_readings,valid_training_readings,training_timestamps,vm_series,first_training_timestamp,last_training_timestamp,missing_vm_timestamp_cells,training_samples,latest_label_row,features,forecast_vm_count,holdout_labels_used
+1,48,480000,480000,48,10000,0,14100,0,360000,47,25,10000,False
+2,54,540000,540000,54,10000,0,15900,0,420000,53,25,10000,False
+3,60,600000,600000,60,10000,0,17700,0,480000,59,25,10000,False
+4,66,660000,660000,66,10000,0,19500,0,540000,65,25,10000,False
+5,72,720000,720000,72,10000,0,21300,0,600000,71,25,10000,False
+6,78,780000,780000,78,10000,0,23100,0,660000,77,25,10000,False
+7,84,840000,840000,84,10000,0,24900,0,720000,83,25,10000,False

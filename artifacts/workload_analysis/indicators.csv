@@ -1,0 +1,4 @@
+indicator,rule,vm_count,share_pct
+Idle,Training mean avg_cpu < 5%,4635,46.35
+Steady,Training mean >= 5% and std/mean <= 0.5,4495,44.95
+Hot,At least one training max_cpu > 80%,2235,22.35
