@@ -1,6 +1,0 @@
-condition,training_readings,VMs_at_timestamp_0,min_VMs_per_timestamp,max_VMs_per_timestamp,mean_VMs_per_timestamp
-avg_cpu == 0,0,0,0,0,0.0
-avg_cpu < 0.1%,2877,24,23,29,26.154545454545456
-avg_cpu < 1%,83208,763,714,794,756.4363636363636
-avg_cpu < 5%,538219,4946,4758,5012,4892.9
-avg_cpu > 0,1100000,10000,10000,10000,10000.0

@@ -1,3 +1,0 @@
-target,model,forecast_cases,unique_timestamps,mae,rmse,smape_pct,mase,mase_cases,persistence_mae,skill_vs_persistence,bias,underforecast_fraction
-active_vm_count,persistence,6,6,0.0,0.0,0.0,,0,0.0,,0.0,0.0
-aggregate_cpu_utilization,persistence,6,6,0.25370204377222755,0.25996307287108616,2.7286603311336246,2.0946843575956486,6,0.25370204377222755,0.0,-0.25370204377222755,1.0
